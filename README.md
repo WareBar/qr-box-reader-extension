@@ -25,6 +25,11 @@ QR Box Reader lets you scan a QR code on the very screen where it's displayed.
 
 You can then copy the link, or open it after you've checked it.
 
+## Usage
+
+inside the client folder, create a .env file, and add WXT_SERVER_URL with the value of https://qr-box-reader-extension.onrender.com
+
+
 ## Features
 
 - **Point-and-select scanning:** draw a box around only the QR code you want, even on a busy page.
