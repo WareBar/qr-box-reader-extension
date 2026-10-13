@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Icon } from "~/components/Icons";
+import qrIcon from "@/assets/icon.png"
 
 const SERVER_URL = import.meta.env.WXT_SERVER_URL;
 const PROBE_URL = `${SERVER_URL.replace(/\/+$/, "")}/decode`;
@@ -101,8 +102,10 @@ export default function App() {
     <div className="min-h-screen bg-neutral-50 font-sans text-neutral-900 antialiased">
       <div className="mx-auto max-w-2xl px-6 py-14">
         <header className="mb-8 flex items-center gap-4">
-          <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
-            <Icon name="qr" className="h-7 w-7" />
+          <div className="h-20 w-20">
+            <img
+            className="h-full w-full object-contain"
+            src={qrIcon} alt="icon-alt" />
           </div>
           <div>
             <h1 className="text-2xl font-semibold leading-tight">Welcome to QR Box Reader</h1>

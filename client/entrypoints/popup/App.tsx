@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import qrIcon from "@/assets/icon.png"
 
 
 const ICONS = {
@@ -57,9 +57,15 @@ export default function App() {
     <div className="w-60 p-4 font-sans">
       {/* Header */}
       <div className="mb-4 flex items-center gap-3">
-        <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
+        {/* <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-blue-50 text-blue-600">
           <Icon name="qr" className="h-5 w-5" />
+        </div> */}
+        <div className="h-20 w-20">
+          <img
+          className="h-full w-full object-contain"
+          src={qrIcon} alt="icon-alt" />
         </div>
+
         <div>
           <h1 className="text-[15px] font-semibold leading-tight">QR Box Reader</h1>
           <p className="text-xs text-neutral-500">Read a QR code right from your screen</p>
